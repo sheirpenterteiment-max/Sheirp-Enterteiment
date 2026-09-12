@@ -1,0 +1,549 @@
+/* ===========================
+   SHEIRP ENTERTAINMENT
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    background:#081B4B;
+    color:white;
+}
+
+/* ===== NAVBAR ===== */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    background:rgba(5,18,55,.95);
+    backdrop-filter:blur(12px);
+    z-index:1000;
+}
+
+nav{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+}
+
+.logo{
+    color:#4DA3FF;
+    font-size:28px;
+    font-weight:700;
+    letter-spacing:2px;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav a:hover{
+    color:#4DA3FF;
+}
+
+/* ===== HERO ===== */
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:40px;
+    background:linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.45)),
+    url("https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+}
+
+.hero-content{
+    max-width:800px;
+}
+
+.hero h1{
+    font-size:60px;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    color:#dbe8ff;
+    margin-bottom:35px;
+    line-height:1.6;
+}
+
+.btn{
+    display:inline-block;
+    padding:16px 40px;
+    background:#1E6BFF;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-4px);
+    background:#4DA3FF;
+}
+
+/* ===== SECTIONS ===== */
+
+.about,
+.audition,
+.apply{
+    max-width:1100px;
+    margin:auto;
+    padding:100px 30px;
+}
+
+.about h2,
+.audition h2,
+.apply h2{
+    font-size:38px;
+    color:#4DA3FF;
+    margin-bottom:25px;
+}
+
+.about p,
+.apply p{
+    font-size:18px;
+    line-height:1.8;
+    color:#d7e6ff;
+}
+
+/* ===== CARD ===== */
+
+.card{
+    background:#10295f;
+    padding:35px;
+    border-radius:20px;
+    margin-top:35px;
+    box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+.card h3{
+    margin-bottom:20px;
+}
+
+.card ul{
+    list-style:none;
+}
+
+.card li{
+    padding:12px 0;
+    font-size:18px;
+}
+
+/* ===== WHATSAPP ===== */
+
+.whatsapp{
+    display:inline-block;
+    margin-top:30px;
+    padding:15px 35px;
+    background:#25D366;
+    color:white;
+    text-decoration:none;
+    border-radius:40px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.whatsapp:hover{
+    transform:scale(1.05);
+}
+
+/* ===== FOOTER ===== */
+
+footer{
+    text-align:center;
+    padding:30px;
+    background:#061435;
+    color:#9fb8ff;
+}
+
+/* ===== RESPONSIVE ===== */
+
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+}
+
+nav ul{
+    flex-direction:column;
+    margin-top:20px;
+    gap:15px;
+}
+
+.hero h1{
+    font-size:38px;
+}
+
+.hero p{
+    font-size:18px;
+}
+
+.about h2,
+.audition h2,
+.apply h2{
+    font-size:30px;
+}
+
+}
+/* ===== ARTISTS ===== */
+
+.artists{
+    padding:100px 30px;
+    background:#061435;
+    text-align:center;
+}
+
+.artists h2{
+    color:#4DA3FF;
+    font-size:40px;
+    margin-bottom:50px;
+}
+
+.artists-container{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.artist-card{
+    width:330px;
+    background:#10295f;
+    border-radius:20px;
+    padding:30px;
+    transition:.3s;
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+}
+
+.artist-card:hover{
+    transform:translateY(-10px);
+}
+
+.artist-card h3{
+    color:#4DA3FF;
+    margin-bottom:20px;
+}
+
+.artist-card p{
+    color:#d7e6ff;
+    line-height:1.7;
+    margin-bottom:20px;
+}
+
+.artist-card span{
+    background:#1E6BFF;
+    padding:8px 18px;
+    border-radius:30px;
+    font-size:14px;
+}
+/* ===== WHO WE ARE ===== */
+
+.who-we-are{
+    padding:100px 30px;
+    background:#0b235d;
+    text-align:center;
+}
+
+.who-we-are h2{
+    color:#4DA3FF;
+    font-size:40px;
+    margin-bottom:25px;
+}
+
+.who-we-are p{
+    max-width:900px;
+    margin:0 auto 50px;
+    color:#d7e6ff;
+    line-height:1.8;
+    font-size:18px;
+}
+
+.services{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:25px;
+}
+
+.service{
+    width:260px;
+    background:#10295f;
+    padding:25px;
+    border-radius:18px;
+    transition:.3s;
+}
+
+.service:hover{
+    transform:translateY(-8px);
+}
+
+.service h3{
+    color:#4DA3FF;
+    margin-bottom:15px;
+}
+
+.service p{
+    font-size:16px;
+    margin:0;
+}
+/* ===== DEBUT PROCESS ===== */
+
+.debut-process{
+    padding:100px 30px;
+    background:#081B4B;
+    text-align:center;
+}
+
+.debut-process h2{
+    color:#4DA3FF;
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+.debut-process .intro{
+    max-width:900px;
+    margin:0 auto 50px;
+    color:#d7e6ff;
+    line-height:1.8;
+}
+
+.timeline{
+    max-width:900px;
+    margin:auto;
+}
+
+.step{
+    background:#10295f;
+    margin:20px 0;
+    padding:25px;
+    border-left:6px solid #4DA3FF;
+    border-radius:15px;
+    text-align:left;
+    transition:.3s;
+}
+
+.step:hover{
+    transform:translateX(10px);
+}
+
+.step h3{
+    color:#4DA3FF;
+    margin-bottom:10px;
+}
+
+.step p{
+    color:#d7e6ff;
+    line-height:1.7;
+} 
+/* ===== NEWS ===== */
+
+.news{
+    padding:100px 30px;
+    background:#061435;
+    text-align:center;
+}
+
+.news h2{
+    color:#4DA3FF;
+    font-size:42px;
+    margin-bottom:15px;
+}
+
+.news-intro{
+    color:#d7e6ff;
+    margin-bottom:50px;
+}
+
+.news-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+}
+
+.news-card{
+    width:420px;
+    background:#10295f;
+    padding:30px;
+    border-radius:18px;
+    text-align:left;
+    box-shadow:0 10px 25px rgba(0,0,0,.3);
+    transition:.3s;
+}
+
+.news-card:hover{
+    transform:translateY(-10px);
+}
+
+.date{
+    display:inline-block;
+    background:#1E6BFF;
+    color:white;
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:13px;
+    margin-bottom:15px;
+    font-weight:bold;
+}
+
+.news-card h3{
+    color:#4DA3FF;
+    margin-bottom:15px;
+}
+
+.news-card p{
+    color:#d7e6ff;
+    line-height:1.7;
+}
+section
+
+    h2>🔥 Why Audition With Us?</h2>
+
+    <p class="intro">
+        Sheirp Entertainment is more than an entertainment company. We are building a new generation of global artists with professionalism, creativity and passion.
+    </p>
+
+    <div class="why-container">
+
+        <div class="why-card">
+            <h3>🌍 Global Vision</h3>
+            <p>
+                Our goal is to become a globally recognized entertainment company,
+                reaching millions of people through music, performances and digital platforms around the world.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <h3>🔥 Professional Projects</h3>
+            <p>
+                We are committed to creating high-quality artists, music and performances with dedication and professional standards.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <h3>💙 Our Mission</h3>
+            <p>
+                Our mission is to discover, train and support talented people from every country, helping them achieve their dreams and inspire fans worldwide.
+            </p>
+        </div>
+
+        <div class="why-card">
+            <h3>✨ Our Identity</h3>
+            <p>
+                Sheirp Entertainment is <strong>not a Fake Pop company</strong>. We are building a different kind of <strong>Global K-Pop entertainment company</strong>, focused on real artists, professional development, original music and long-term projects.
+            </p>
+        </div>
+
+    </div>
+
+</section>
+/* ==========================
+   WHY AUDITION WITH US
+========================== */
+
+.why-us{s
+    padding:100px 40px;
+    background:linear-gradient(180deg#07193d#0b2f7a)
+    text-align:center
+}
+
+.why-us h2{
+    font-size:42px;
+    color:#4DA3FF;
+    margin-bottom:20px;
+    font-weight:700;
+}
+
+.why-us .intro{
+    max-width:900px;
+    margin:0 auto 60px;
+    color:#dbe8ff;
+    line-height:1.8;
+    font-size:18px;
+}
+
+.why-container{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:30px;
+}
+
+.why-card{
+    width:300px;
+    background:#10295f;
+    border:1px solid rgba(77,163,255,.2);
+    border-radius:20px;
+    padding:30px;
+    transition:0.35s;
+    box-shadow:0 10px 30px rgba(0,0,0,.25);
+}
+
+.why-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 40px rgba(30,107,255,.35);
+}
+
+.why-card h3{
+    color:#4DA3FF;
+    margin-bottom:18px;
+    font-size:22px;
+}
+
+.why-card p{
+    color:#d7e6ff;
+    line-height:1.8;
+    font-size:16px;
+}
+
+.why-card strong{
+    color:#66B2FF;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.why-us h2{
+    font-size:32px;
+}
+
+.why-container{
+    flex-direction:column;
+    align-items:center;
+}
+
+.why-card{
+    width:100%;
+    max-width:360px;
+}
+
+}
